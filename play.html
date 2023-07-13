@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>播放器</title>
+    <link rel="stylesheet" href="./css/mui-player.min.css">
+    <script src="./js/mui-player.min.js"></script>
+    <script src="./js/mui-player-desktop-plugin.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h3 style="text-align: center;">{{ detailObj.title }}</h3>
+        <div id="mui-player" style="max-width: 80vw;margin: auto; "></div>
+    </div>
+</body>
+<script src="./js/vue.js"></script>
+<script src="./js/common.js?v=2"></script>
+<script>
+    // var playerConfig = {
+    //     container: '#mui-player',
+    //     title: '动漫',
+    //     src: './media/videoplayback.mp4',
+    //     poster: './media/dm.png',
+    //     videoAttribute: [{
+    //             attrKey: 'webkit-playsinline',
+    //             attrValue: ''
+    //         },
+    //         {
+    //             attrKey: 'playsinline',
+    //             attrValue: ''
+    //         },
+    //         {
+    //             attrKey: 'x5-playsinline',
+    //             attrValue: ''
+    //         },
+    //         {
+    //             attrKey: 't7-video-player-type',
+    //             attrValue: 'inline'
+    //         },
+    //         {
+    //             attrKey: 'x5-video-player-type',
+    //             attrValue: 'h5-page'
+    //         },
+    //         {
+    //             attrKey: 'x-webkit-airplay',
+    //             attrValue: 'allow'
+    //         },
+    //         {
+    //             attrKey: 'controlslist',
+    //             attrValue: 'nodownload'
+    //         },
+    //     ],
+    // }
+    // playerConfig.plugins = [
+    //     typeof MuiPlayerDesktopPlugin == 'function' ? new MuiPlayerDesktopPlugin({
+    //         thumbnails: { // 缩略图配置
+    //             preview: ['./media/dm.png'],
+    //             tile: [10, 10],
+    //             scale: [160, 90],
+    //         },
+    //     }) : {},
+    // ]
+
+    // console.log(playerConfig);
+    // var mp = new MuiPlayer(playerConfig);
+</script>
+
+</html>

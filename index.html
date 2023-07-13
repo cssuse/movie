@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>电影</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <div id="app">
+    <!-- partial:index.partial.html -->
+    <section class="gallery">
+      <div class="container">
+        <div class="toolbar">
+          <div class="search-wrapper">
+            <input type="search" placeholder="名称搜索">
+            <div class="counter">
+              总数: <span>12</span></div>
+          </div>
+          <ul class="view-options">
+            <li class="zoom">
+              <input type="range" min="180" max="380" v-model="rangeValue" @input="changeRange">
+            </li>
+            <li class="show-grid" :class="{'active': activeFlag == 0}" @click="tabClick(0)">
+              <button disabled>
+                <img src="./images/grid-view.svg" alt="grid view">
+              </button>
+            </li>
+            <li class="show-list" :class="{'active': activeFlag == 1}" @click="tabClick(1)">
+              <button>
+                <img src="./images/list-view.svg" alt="list view">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="custom-input">
+          <input type="text" v-model="movieName" class="custom-input-text" placeholder="输入电影名称">
+          <div class="custom-input-btn">
+            <a :href="'./play.html?id=0&name=' + movieName" target="_blank">确定</a>
+          </div>
+        </div>
+        <ol class="image-list " :class="activeFlag == 0 ? 'grid-view': 'list-view'">
+          <li v-for="(item,index) in list" :key="index">
+            <a :href="'./play.html?id=' + item.id" target="_blank">
+              <figure>
+                <img :src="item.img ? item.img: defaultImg" alt="">
+                <figcaption>
+                  <p>{{ item.title }}</p>
+                  <!-- <p>Photo by <a href="https://unsplash.com/@redcharlie" target="_blank">redcharlie</a></p> -->
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <!-- <li>
+            <figure>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature2.jpg" alt="">
+              <figcaption>
+                <p>landscape photography of brown mountain</p>
+                <p>Photo by <a href="https://unsplash.com/@wilstewart3" target="_blank">Wil Stewart</a></p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature3.jpg" alt="">
+              <figcaption>
+                <p>blue starry night</p>
+                <p>Photo by <a href="https://unsplash.com/@ignitedit" target="_blank">Mark Basarab</a></p>
+              </figcaption>
+            </figure>
+          </li> -->
+
+        </ol>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/vue.js"></script>
+  <script src="./js/common.js"></script>
+  <!-- partial -->
+  <script src="./js/script.js"></script>
+  <script type="">
+
+  </script>
+
+</body>
+
+</html>
