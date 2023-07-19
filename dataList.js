@@ -27,6 +27,6 @@
             url: './media/videoplayback.mp4',
             title: '动漫',
             desc: '闹钟动漫',
-        },
+        }
   ]
 }
