@@ -1,32 +1,32 @@
 {
-  list: [
+  "list": [
     {
-            id: 4,
-            img: '',
-            url: './media/阳光电影www.ygdy8.com.重启地球.2021.HD.1080P.国语中字.mp4',
-            title: '阳光电影www.ygdy8.com.重启地球.2021.HD.1080P.国语中字.mp4',
-            desc: '阳光电影www.ygdy8.com.重启地球.2021.HD.1080P.国语中字.mp4',
-        },
-        {
-            id: 3,
-            img: '',
-            url: './media/阳光电影www.ygdy8.com.冥界警局2：咒灵崛起.2022.BD.1080P.中英双字.mkv',
-            title: '冥界警局2：咒灵崛起.2022.BD.1080P.中英双字.mkv',
-            desc: '冥界警局2：咒灵崛起.2022.BD.1080P.中英双字.mkv',
-        },
-        {
-            id: 2,
-            img: '',
-            url: './media/ckin.mp4',
-            title: '动漫1',
-            desc: '闹钟动漫',
-        },
-        {
-            id: 1,
-            img: './media/ckin.jpg',
-            url: './media/videoplayback.mp4',
-            title: '动漫',
-            desc: '闹钟动漫',
-        }
+      "id": 4,
+      "img": "",
+      "url": "./media/阳光电影www.ygdy8.com.重启地球.2021.HD.1080P.国语中字.mp4",
+      "title": "阳光电影www.ygdy8.com.重启地球.2021.HD.1080P.国语中字.mp4",
+      "desc": "阳光电影www.ygdy8.com.重启地球.2021.HD.1080P.国语中字.mp4"
+    },
+    {
+      "id": 3,
+      "img": "",
+      "url": "./media/阳光电影www.ygdy8.com.冥界警局2：咒灵崛起.2022.BD.1080P.中英双字.mkv",
+      "title": "冥界警局2：咒灵崛起.2022.BD.1080P.中英双字.mkv",
+      "desc": "冥界警局2：咒灵崛起.2022.BD.1080P.中英双字.mkv"
+    },
+    {
+      "id": 2,
+      "img": "",
+      "url": "./media/ckin.mp4",
+      "title": "动漫1",
+      "desc": "闹钟动漫"
+    },
+    {
+      "id": 1,
+      "img": "./media/ckin.jpg",
+      "url": "./media/videoplayback.mp4",
+      "title": "动漫",
+      "desc": "闹钟动漫"
+    }
   ]
 }
