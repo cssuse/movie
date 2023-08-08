@@ -46,11 +46,11 @@
         mounted() {
             console.log(window.location.href, window.location.href.indexOf('play.html'))
             let url = window.location.href
-            if (url.indexOf('play.html') > 0) {
+            if (url.indexOf('play.html') > -1) {
                 console.log(this.getUrlParams(url))
                 this.urlParams = this.getUrlParams(url) || {}
                 if(this.urlParams.id == '0') {
-                    if (this.urlParams.name.indexOf('http')) {
+                    if (this.urlParams.name.indexOf('http') > -1) {
                         this.detailObj.url = decodeURI(this.urlParams.name)
                     } else {
                         this.detailObj.title = decodeURI(this.urlParams.name)
