@@ -50,8 +50,13 @@
                 console.log(this.getUrlParams(url))
                 this.urlParams = this.getUrlParams(url) || {}
                 if(this.urlParams.id == '0') {
-                    this.detailObj.title = decodeURI(this.urlParams.name)
-                    this.detailObj.url = './media/' + decodeURI(this.urlParams.name)
+                    if (this.urlParams.name.indexOf('http')) {
+                        this.detailObj.url = decodeURI(this.urlParams.name)
+                    } else {
+                        this.detailObj.title = decodeURI(this.urlParams.name)
+                        this.detailObj.url = './media/' + decodeURI(this.urlParams.name)
+                    }
+                    
                     this.initPlayer()
                 } else if (this.urlParams.id && this.urlParams.id !='0') {
                     this.detailObj = this.list.filter(item => item.id == this.urlParams.id)[0]
